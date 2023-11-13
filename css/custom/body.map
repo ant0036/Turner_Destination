@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "body.css",
+	"sources": [
+		"../../sass/custom/body.scss"
+	],
+	"sourcesContent": [
+		""
+	],
+	"names": [],
+	"mappings": ""
+}
