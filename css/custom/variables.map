@@ -5,7 +5,7 @@
 		"../../sass/custom/variables.scss"
 	],
 	"sourcesContent": [
-		""
+		"$dark-green: #1D3622;\r\n$tan: #EAE7D2;\r\n$accent: #72BF53;"
 	],
 	"names": [],
 	"mappings": ""
