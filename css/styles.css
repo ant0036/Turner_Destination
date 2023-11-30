@@ -50,72 +50,81 @@ li {
 }
 
 /* line 25, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 28, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+a:hover {
+  color: inherit !important;
+}
+
+/* line 31, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 body {
   background-color: #1D3622;
   background-image: url(../../images/pattern-gold.png);
 }
 
-/* line 30, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 36, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+body#hateno {
+  background-color: #593927;
+}
+
+/* line 40, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .tan {
   background-color: #EAE7D2;
 }
 
-/* line 32, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 42, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .tan .text {
   padding: 2.5rem;
 }
 
-/* line 35, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 45, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .tan h1, .tan h2, .tan h3, .tan p, .tan li, .tan a {
   color: #1D3622;
 }
 
-/* line 39, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 49, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .relative {
   position: relative;
 }
 
-/* line 43, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 53, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .absolute {
   position: absolute;
 }
 
-/* line 46, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 56, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .filter {
-  filter: contrast(90%);
-  filter: hue-rotate(20deg);
-  filter: brightness(70%);
+  filter: contrast(90%) brightness(80%);
 }
 
-/* line 51, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 68, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .hero {
   margin-top: 0;
 }
 
-/* line 53, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 70, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .hero p {
   font-style: italic;
 }
 
-/* line 56, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
-.hero .absolute {
-  left: 40%;
-  bottom: 10%;
+/* line 73, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+.hero .text {
+  position: relative;
+  margin-top: -10rem;
+  z-index: 10;
 }
 
-/* line 59, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
-.hero .absolute .title {
-  bottom: 5rem;
-}
-
-/* line 64, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 79, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .hero .subhead {
   font-style: italic;
   text-align: right;
   margin-right: 0%;
 }
 
-/* line 68, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 83, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .hero .subhead :before {
   content: "";
   position: absolute;
@@ -126,33 +135,35 @@ body {
   top: 50%;
 }
 
-/* line 80, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
-.gradient {
-  color: #1D3622;
-  z-index: 100;
-  top: 0;
-  left: 0;
+/* line 95, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+.gradient::before {
+  content: "";
+  height: 3%;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background-image: linear-gradient(to bottom, #1D3622, transparent);
+  opacity: 1;
 }
 
-/* line 92, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 106, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 section {
   padding: 1rem 0;
 }
 
-/* line 96, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 110, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .headingline {
   padding: 0.3% 5%;
   background-color: #fff;
 }
 
-/* line 104, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 118, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .main .subhead {
   font-style: italic;
   text-align: right;
-  margin-right: 10%;
 }
 
-/* line 108, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 122, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .main .subhead :before {
   content: "";
   position: absolute;
@@ -163,24 +174,24 @@ section {
   top: 34.5%;
 }
 
-/* line 120, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 134, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .map {
   padding: 1rem;
 }
 
-/* line 124, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 138, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .explore h2 {
   padding-top: 2rem;
 }
 
-/* line 129, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 143, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .about .subhead {
   font-style: italic;
   text-align: right;
   margin-right: 19%;
 }
 
-/* line 134, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 148, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .about .subhead :before {
   content: "";
   position: absolute;
@@ -191,13 +202,13 @@ section {
   top: 25%;
 }
 
-/* line 148, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 162, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .explore .subhead {
   text-align: right;
   margin-right: 5%;
 }
 
-/* line 151, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 165, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .explore .subhead :before {
   content: "";
   position: absolute;
@@ -208,90 +219,230 @@ section {
   top: 76%;
 }
 
-/* line 161, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 175, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .explore .map {
   padding-bottom: 1rem;
 }
 
-/* line 167, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 181, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .locations li {
   margin-bottom: 2rem;
 }
 
-/* line 172, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 186, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .gallery {
   margin-bottom: 3rem;
 }
 
-/* line 174, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 188, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .gallery .subhead {
   font-style: italic;
   text-align: right;
-  margin-right: 34.5%;
+  margin-right: 11%;
 }
 
-/* line 179, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 193, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .gallery .subhead :before {
   content: "";
   position: absolute;
-  width: 15%;
+  width: 33%;
   height: 0.3%;
   background: #fff;
-  left: 34%;
+  left: 14%;
   top: 68%;
 }
 
-/* line 192, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 206, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .hero {
   margin-bottom: 2rem;
 }
 
-/* line 195, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 209, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .main {
   margin-bottom: 2rem;
 }
 
-/* line 199, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 213, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .about {
   margin-bottom: 2rem;
 }
 
-/* line 204, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 218, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .locations h3 {
   margin-bottom: 0;
 }
 
-/* line 211, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 225, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .gallery img {
   filter: brightness(100%);
   transition: filter, 0.3s;
 }
 
-/* line 215, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 229, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .gallery img:hover {
   filter: brightness(40%);
 }
 
-/* line 218, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
-.gallery .heart:hover {
-  filter: brightness(100%);
+/* line 231, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+.gallery img:hover + .likes {
+  opacity: 100%;
 }
 
-/* line 221, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
-.gallery .heart {
-  width: 60%;
+/* line 237, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+.gallery .likes {
+  z-index: 1;
+  margin-top: -16%;
+  margin-left: 70%;
+  opacity: 0;
+  transition: opacity, 0.3s;
 }
 
-/* line 225, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
-.gallery .absolute p {
+/* line 243, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+.gallery .likes p:after {
   position: absolute;
+  content: url(../images/heart.png);
+  top: 0%;
+  left: 50%;
 }
 
-/* line 230, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
-.gallery .absolute img {
-  position: absolute;
-  top: 75%;
-  right: -20%;
+@media all and (max-width: 992px) {
+  /* line 259, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  h2 {
+    font-size: 1.4rem;
+  }
+  /* line 262, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  h3 {
+    font-size: 1.15rem;
+  }
+  /* line 266, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .hero .subhead :before {
+    width: 32%;
+    height: 0.4%;
+    left: 3%;
+    top: 53%;
+  }
+  /* line 274, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .main .subhead :before {
+    width: 19%;
+    height: 0.4%;
+    left: 14%;
+    top: 31%;
+  }
+  /* line 282, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  p {
+    font-size: 0.9rem;
+  }
+  /* line 285, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .about .subhead {
+    margin-right: 16%;
+  }
+  /* line 287, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .about .subhead :before {
+    width: 38%;
+    left: 19%;
+    top: 22%;
+  }
+  /* line 294, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .explore .subhead {
+    margin-right: 8%;
+  }
+  /* line 296, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .explore .subhead :before {
+    width: 26%;
+    left: 28%;
+  }
+  /* line 301, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .gallery .subhead {
+    margin-right: 6%;
+  }
+  /* line 303, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .gallery .subhead :before {
+    left: 10%;
+    top: 65%;
+  }
+  /* line 308, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .gallery .likes {
+    margin-top: -20%;
+    margin-left: 65%;
+  }
+  /* line 311, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .gallery .likes p:after {
+    top: 0%;
+    left: 50%;
+  }
+  /* line 320, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .locations p {
+    font-size: 0.8rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  /* line 326, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .hero .subhead {
+    margin-right: 9%;
+  }
+  /* line 328, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .hero .subhead :before {
+    width: 25%;
+    left: 10%;
+  }
+  /* line 333, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  h2 {
+    font-size: 1.2rem;
+  }
+  /* line 336, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  p {
+    font-size: 0.8rem;
+  }
+  /* line 339, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .tan .text {
+    padding: 1rem;
+  }
+  /* line 342, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .main .subhead {
+    margin-right: 0;
+  }
+  /* line 344, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .main .subhead :before {
+    width: 19%;
+    height: 0.4%;
+    left: 8%;
+    top: 25%;
+  }
+  /* line 351, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .about .subhead {
+    margin-right: 11%;
+  }
+  /* line 353, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .about .subhead :before {
+    width: 40%;
+    left: 14%;
+    top: 18%;
+  }
+  /* line 359, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .explore .subhead {
+    margin-right: 0%;
+  }
+  /* line 361, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .explore .subhead :before {
+    width: 28%;
+    left: 25%;
+  }
+}
+
+@media all and (max-width: 550px) {
+  /* line 368, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  h2 {
+    font-size: 1.1rem;
+  }
+  /* line 372, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .main .subhead :before {
+    width: 16%;
+  }
+  /* line 377, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  .gallery .subhead :before {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

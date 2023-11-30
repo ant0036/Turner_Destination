@@ -22,9 +22,19 @@ li {
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+a:hover {
+    color: inherit !important;
+}
 body {
     background-color: $dark-green;
     background-image: url(../../images/pattern-gold.png);
+}
+
+body#hateno {
+    background-color: #593927;
 }
 
 .tan {
@@ -44,23 +54,28 @@ body {
     position: absolute;
 }
 .filter {
-    filter: contrast(90%);
-    filter: hue-rotate(20deg);
-    filter: brightness(70%);
+    filter: contrast(90%) brightness(80%);
+    
 }
+
+// .bar:before {
+//     background-image: linear-gradient(to bottom, $dark-green, transparent);
+//     content: "";
+//     height: 100%;
+//     position: absolute;
+//     width: 100%;
+// }
 .hero {
     margin-top: 0;
     p {
         font-style: italic;
     }
-    .absolute {
-        left:40%;
-        bottom: 10%;
-        .title {
-            bottom: 5rem;
+        .text {
+            position: relative;
+            margin-top: -10rem;
+            z-index: 10;
             
         }
-    }
         .subhead {
             font-style: italic;
         text-align: right;
@@ -77,17 +92,16 @@ body {
     }
 }
 
-.gradient {
-    
-    color: $dark-green;
-    z-index: 100;
-    // background-image: -moz-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
-   
-    // mix-blend-mode: overlay;
-        top:0; 
-        left:0;
-    
-}
+.gradient::before {
+    content: "";
+    height: 3%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(to bottom, $dark-green, transparent);
+    opacity: 1;
+    }
+
 
 section {
     padding: 1rem 0;
@@ -104,7 +118,7 @@ section {
     .subhead {
         font-style: italic;
         text-align: right;
-        margin-right: 10%;
+        // margin-right: 10%;
             :before {
             content:"";
             position: absolute;
@@ -175,14 +189,14 @@ section {
         
         font-style: italic;
     text-align: right;
-    margin-right: 34.5%;
+    margin-right: 11%;
         :before {
         content:"";
         position: absolute;
-        width: 15%;
+        width: 33%;
         height: 0.3%;
         background: #fff;
-        left: 34%;
+        left: 14%;
         top:68%;
     }
     
@@ -214,23 +228,154 @@ section {
         }
         img:hover {
            filter: brightness(40%);
+           +.likes{
+            opacity: 100%;
+           }
+           
     }
-        .heart:hover {
-            filter: brightness(100%);
-        }
-        .heart {
-            width:60%;
-        }
-        .absolute {
-            p {
+       
+        .likes {
+            z-index: 1;
+            margin-top: -16%;
+            margin-left: 70%;
+            opacity: 0;
+            transition: opacity, 0.3s;
+              p:after {
                 position: absolute;
-                // top: 75%;
-                // right:-20%;
-            }
-            img {
-                position: absolute;
-                top: 75%;
-                right:-20%;
-            }
+                content: url(../images/heart.png);
+                
+                top:0%;
+                left:50%;
+             
+              }
+            
+            
+      
         }
     }
+
+    
+@media all and (max-width: 992px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+    h3 {
+        font-size: 1.15rem;
+    }
+    .hero .subhead {
+        :before {
+            width: 32%;
+            height: 0.4%;
+            left: 3%;
+            top:53%;
+        }
+    }
+    .main .subhead{
+        :before {
+           
+            width: 19%;
+            height: 0.4%;
+            left: 14%;
+            top:31%;
+        }
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .about .subhead {
+        margin-right: 16%;
+        :before {
+            width: 38%;
+            left: 19%;
+            top:22%;
+        }
+    }
+    
+    .explore .subhead {
+        margin-right: 8%;
+        :before {
+            width: 26%;
+            left: 28%;
+        }
+    }
+    .gallery .subhead {
+        margin-right: 6%;
+        :before {
+            left: 10%;
+            top:65%;
+        }
+    }
+    .gallery .likes {
+            margin-top: -20%;
+            margin-left: 65%;
+              p:after {
+                top:0%;
+                left:50%;
+             
+              }
+            
+            
+      
+        }
+    .locations p {
+            font-size: 0.8rem;
+        }
+}
+
+@media all and (max-width:768px) {
+    .hero .subhead {
+        margin-right: 9%;
+        :before {
+            width: 25%;
+            left: 10%;
+        }
+    }
+        h2 { 
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    .tan .text {
+        padding:1rem;
+    }
+    .main .subhead{
+        margin-right: 0;
+        :before {
+            width: 19%;
+            height: 0.4%;
+            left: 8%;
+            top:25%;
+        }
+    }
+    .about .subhead {
+        margin-right: 11%;
+        :before {
+            width: 40%;
+            left:14%;
+            top:18%;
+        }
+    }
+    .explore .subhead {
+        margin-right: 0%;
+        :before {
+            width: 28%;
+            left:25%;
+        }
+    }
+}
+@media all and (max-width:550px) {
+    h2 {
+        font-size: 1.1rem;
+    }
+    .main .subhead{
+        :before {
+            width:16%;
+        }
+    }
+    .gallery .subhead {
+        :before {
+            width:30%;
+        }
+    }
+}
