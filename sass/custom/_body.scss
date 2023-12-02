@@ -1,19 +1,28 @@
-h1, h2, h3, p, li, a {
+h1,
+h2,
+h3,
+p,
+li,
+a {
     color: $tan;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: $heading;
     font-weight: 700;
     font-size: 1.7rem;
 }
+
 h3 {
     font-family: $heading;
     font-weight: 700;
     font-size: 1.4rem;
 }
 
-p, li, a {
+p,
+li,
+a {
     font-family: $body;
     font-size: 1rem;
 }
@@ -22,30 +31,40 @@ li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 a:hover {
     color: inherit !important;
 }
+
 body {
     background-color: $dark-green;
     background-image: url(../../images/pattern-gold.png);
 }
 
 body#hateno {
-    background-color: #593927;
+    background-color: #4d2e1d;
 }
 
 .tan {
     background-color: $tan;
+
     .text {
         padding: 2.5rem;
     }
-    h1, h2, h3, p, li, a {
+
+    h1,
+    h2,
+    h3,
+    p,
+    li,
+    a {
         color: $dark-green;
     }
 }
+
 .relative {
     position: relative;
 }
@@ -53,9 +72,10 @@ body#hateno {
 .absolute {
     position: absolute;
 }
+
 .filter {
-    filter: contrast(90%) brightness(80%);
-    
+    filter: contrast(90%) brightness(60%);
+
 }
 
 // .bar:before {
@@ -67,72 +87,103 @@ body#hateno {
 // }
 .hero {
     margin-top: 0;
+
     p {
         font-style: italic;
     }
-        .text {
-            position: relative;
-            margin-top: -10rem;
-            z-index: 10;
-            
-        }
-        .subhead {
-            font-style: italic;
+
+    .text {
+        position: relative;
+        margin-top: -10rem;
+        z-index: 10;
+
+    }
+
+    .subhead {
+        font-style: italic;
         text-align: right;
         margin-right: 0%;
-            :before {
-            content:"";
+
+        :before {
+            content: "";
             position: absolute;
             width: 26%;
             height: 0.4%;
             background: #fff;
             left: 0%;
-            top:50%;
+            top: 50%;
         }
     }
 }
 
-.gradient::before {
-    content: "";
-    height: 3%;
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-    background-image: linear-gradient(to bottom, $dark-green, transparent);
-    opacity: 1;
+#home {
+    .gradient::before {
+        content: "";
+        height: 3%;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        background-image: linear-gradient(to bottom, $dark-green, transparent);
+        opacity: 1;
+    }
+}
+
+#hateno {
+    .gradient::before {
+        content: "";
+        height: 3%;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        background-image: linear-gradient(to bottom, #4d2e1d, transparent);
+        opacity: 1;
+    }
+}
+
+#hateno {
+    .hero {
+        max-height: 20rem;
+        overflow: hidden;
+
+        .text {
+            margin-top: -200%;
+        }
     }
 
+}
 
 section {
     padding: 1rem 0;
 }
 
 .headingline {
-    padding: 0.3% 5%; 
+    padding: 0.3% 5%;
     background-color: #fff;
-   
- 
+
+
 }
 
 .main {
     .subhead {
         font-style: italic;
         text-align: right;
-        // margin-right: 10%;
-            :before {
-            content:"";
+        margin-right: 10%;
+
+        :before {
+            content: "";
             position: absolute;
             width: 20%;
             height: 0.4%;
             background: $dark-green;
             left: 18%;
-            top:34.5%;
+            top: 34.5%;
         }
     }
 }
 
+
 .map {
-    padding: 1rem ;
+    padding: 1rem;
 }
 
 .explore h2 {
@@ -141,71 +192,106 @@ section {
 
 .about {
     .subhead {
-        
+
         font-style: italic;
-    text-align: right;
-    margin-right: 19%;
+        text-align: right;
+        margin-right: 19%;
+
         :before {
-        content:"";
-        position: absolute;
-        width: 38%;
-        height: 0.3%;
-        background: #fff;
-        left: 21%;
-        top:25%;
+            content: "";
+            position: absolute;
+            width: 38%;
+            height: 0.3%;
+            background: #fff;
+            left: 21%;
+            top: 25%;
+        }
+
     }
-    
+}
+
+#hateno {
+    .about {
+        .subhead {
+
+            font-style: italic;
+            text-align: right;
+            margin-right: 19%;
+
+            :before {
+                content: "";
+                position: absolute;
+                width: 20%;
+                height: 0.3%;
+                background: #fff;
+                left: 30%;
+                top: 32%;
+            }
+
+        }
     }
+
 }
 
 .explore {
     .subhead {
         text-align: right;
         margin-right: 5%;
+
         :before {
-            content:"";
+            content: "";
             position: absolute;
             width: 22%;
             height: 0.4%;
             background: $dark-green;
             left: 30%;
-            top:76%;
+            top: 76%;
         }
     }
+
     .map {
         padding-bottom: 1rem;
     }
 }
 
 .locations {
-   li {
-    margin-bottom: 2rem;
-   }
+    li {
+        margin-bottom: 2rem;
+    }
+
+    a:hover img {
+        box-shadow: 0.1rem 0.1rem 0.5rem $dark-green;
+    }
 }
+
+
 
 .gallery {
     margin-bottom: 3rem;
+
     .subhead {
-        
+
         font-style: italic;
-    text-align: right;
-    margin-right: 11%;
+        text-align: right;
+        margin-right: 11%;
+
         :before {
-        content:"";
-        position: absolute;
-        width: 33%;
-        height: 0.3%;
-        background: #fff;
-        left: 14%;
-        top:68%;
-    }
-    
+            content: "";
+            position: absolute;
+            width: 33%;
+            height: 0.3%;
+            background: #fff;
+            left: 14%;
+            top: 68%;
+        }
+
     }
 }
 
 .hero {
     margin-bottom: 2rem;
 }
+
 .main {
     margin-bottom: 2rem;
 }
@@ -218,164 +304,276 @@ section {
     h3 {
         margin-bottom: 0;
     }
-  
+
+}
+
+.gallery {
+    img {
+        filter: brightness(100%);
+        transition: filter, 0.3s;
     }
 
-    .gallery {
-        img {
-            filter: brightness(100%);
-            transition: filter, 0.3s;
-        }
-        img:hover {
-           filter: brightness(40%);
-           +.likes{
+    img:hover {
+        filter: brightness(40%);
+
+        +.likes {
             opacity: 100%;
-           }
-           
-    }
-       
-        .likes {
-            z-index: 1;
-            margin-top: -16%;
-            margin-left: 70%;
-            opacity: 0;
-            transition: opacity, 0.3s;
-              p:after {
-                position: absolute;
-                content: url(../images/heart.png);
-                
-                top:0%;
-                left:50%;
-             
-              }
-            
-            
-      
         }
+
     }
 
-    
+    .likes {
+        z-index: 1;
+        margin-top: -16%;
+        margin-left: 70%;
+        opacity: 0;
+        transition: opacity, 0.3s;
+
+        p:after {
+            position: absolute;
+            content: url(../images/heart.png);
+
+            top: 0%;
+            left: 50%;
+
+        }
+
+
+
+    }
+}
+
+
 @media all and (max-width: 992px) {
     h2 {
         font-size: 1.4rem;
     }
+
     h3 {
         font-size: 1.15rem;
     }
+
     .hero .subhead {
         :before {
             width: 32%;
             height: 0.4%;
             left: 3%;
-            top:53%;
+            top: 53%;
         }
     }
-    .main .subhead{
+
+    .main .subhead {
         :before {
-           
+
             width: 19%;
             height: 0.4%;
             left: 14%;
-            top:31%;
+            top: 31%;
         }
     }
+
     p {
         font-size: 0.9rem;
     }
+
     .about .subhead {
         margin-right: 16%;
+
         :before {
             width: 38%;
             left: 19%;
-            top:22%;
+            top: 22%;
         }
     }
-    
+
     .explore .subhead {
         margin-right: 8%;
+
         :before {
             width: 26%;
             left: 28%;
         }
     }
+
     .gallery .subhead {
         margin-right: 6%;
+
         :before {
             left: 10%;
-            top:65%;
+            top: 65%;
         }
     }
+
+    #hateno {
+        .about .subhead {
+            margin-right: 16%;
+
+            :before {
+                width: 20%;
+                left: 28%;
+                top: 26%;
+            }
+        }
+
+        .explore .subhead {
+            margin-right: 8%;
+
+            :before {
+                width: 20%;
+                left: 32%;
+            }
+        }
+
+        .gallery .subhead {
+            margin-right: 14%;
+
+            :before {
+                width: 20%;
+                left: 16%;
+                top: 65%;
+            }
+        }
+
+        .hero {
+            .text {
+                margin-top: -150%;
+            }
+        }
+    }
+
+
+
     .gallery .likes {
-            margin-top: -20%;
-            margin-left: 65%;
-              p:after {
-                top:0%;
-                left:50%;
-             
-              }
-            
-            
-      
+        margin-top: -20%;
+        margin-left: 65%;
+
+        p:after {
+            top: 0%;
+            left: 50%;
+
         }
+
+
+
+    }
+
     .locations p {
-            font-size: 0.8rem;
-        }
+        font-size: 0.8rem;
+    }
 }
 
 @media all and (max-width:768px) {
     .hero .subhead {
         margin-right: 9%;
+
         :before {
             width: 25%;
             left: 10%;
         }
     }
-        h2 { 
-            font-size: 1.2rem;
-        }
-        p {
-            font-size: 0.8rem;
-        }
-    .tan .text {
-        padding:1rem;
+
+    h2 {
+        font-size: 1.2rem;
     }
-    .main .subhead{
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .tan .text {
+        padding: 1rem;
+    }
+
+    .main .subhead {
         margin-right: 0;
+
         :before {
             width: 19%;
             height: 0.4%;
             left: 8%;
-            top:25%;
+            top: 25%;
         }
     }
+
     .about .subhead {
         margin-right: 11%;
+
         :before {
             width: 40%;
-            left:14%;
-            top:18%;
+            left: 14%;
+            top: 18%;
         }
     }
-    .explore .subhead {
-        margin-right: 0%;
-        :before {
-            width: 28%;
-            left:25%;
+
+    #hateno {
+        .about .subhead {
+            margin-right: 11%;
+
+            :before {
+                width: 20%;
+                left: 25%;
+                top: 26%;
+            }
+        }
+
+        .explore .subhead {
+            margin-right: 0%;
+
+            :before {
+                width: 28%;
+                left: 25%;
+            }
+        }
+            .hero {
+                .text {
+                    margin-top: -80%;
+                }
+            }
         }
     }
-}
+
+
 @media all and (max-width:550px) {
     h2 {
         font-size: 1.1rem;
     }
-    .main .subhead{
+
+    .main .subhead {
         :before {
-            width:16%;
+            width: 16%;
         }
     }
+
     .gallery .subhead {
         :before {
-            width:30%;
+            width: 30%;
+        }
+    }
+
+    #hateno {
+        .about .subhead {
+            :before {
+                top: 25%;
+                left: 28%;
+            }
+        }
+
+        .explore .subhead {
+            :before {
+                width: 15%;
+            }
+        }
+
+        .gallery .subhead {
+            :before {
+                width: 15%;
+                top: 63%;
+            }
+        }
+        .hero {
+            .text {
+                margin-top: -50%;
+            }
         }
     }
 }
