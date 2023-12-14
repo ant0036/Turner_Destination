@@ -295,17 +295,18 @@ section {
 
 /* line 269, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .gallery {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 
-/* line 272, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 273, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .gallery .subhead {
   font-style: italic;
   text-align: right;
   margin-right: 11%;
 }
 
-/* line 278, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 279, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .gallery .subhead :before {
   content: "";
   position: absolute;
@@ -316,43 +317,43 @@ section {
   top: 68%;
 }
 
-/* line 291, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 292, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .hero {
   margin-bottom: 2rem;
 }
 
-/* line 295, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 296, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .main {
   margin-bottom: 2rem;
 }
 
-/* line 299, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 300, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .about {
   margin-bottom: 2rem;
 }
 
-/* line 304, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 305, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .locations h3 {
   margin-bottom: 0;
 }
 
-/* line 311, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 312, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .gallery img {
   filter: brightness(100%);
   transition: filter, 0.3s;
 }
 
-/* line 316, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 317, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .gallery img:hover {
   filter: brightness(40%);
 }
 
-/* line 319, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 320, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .gallery img:hover + .likes {
   opacity: 100%;
 }
 
-/* line 325, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 326, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .gallery .likes {
   z-index: 1;
   margin-top: -16%;
@@ -361,7 +362,7 @@ section {
   transition: opacity, 0.3s;
 }
 
-/* line 332, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+/* line 333, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
 .gallery .likes p:after {
   position: absolute;
   content: url(../images/heart.png);
@@ -370,205 +371,205 @@ section {
 }
 
 @media all and (max-width: 992px) {
-  /* line 348, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 349, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   h2 {
     font-size: 1.4rem;
   }
-  /* line 352, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 353, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   h3 {
     font-size: 1.15rem;
   }
-  /* line 357, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 358, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .hero .subhead :before {
     width: 32%;
     height: 0.4%;
     left: 3%;
     top: 53%;
   }
-  /* line 366, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 367, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .main .subhead :before {
     width: 19%;
     height: 0.4%;
     left: 14%;
     top: 31%;
   }
-  /* line 375, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 376, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   p {
     font-size: 0.9rem;
   }
-  /* line 379, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 380, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .about .subhead {
     margin-right: 16%;
   }
-  /* line 382, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 383, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .about .subhead :before {
     width: 38%;
     left: 19%;
     top: 22%;
   }
-  /* line 389, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 390, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .explore .subhead {
     margin-right: 8%;
   }
-  /* line 392, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 393, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .explore .subhead :before {
     width: 26%;
     left: 28%;
   }
-  /* line 398, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 399, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .gallery .subhead {
     margin-right: 6%;
   }
-  /* line 401, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 402, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .gallery .subhead :before {
     left: 10%;
     top: 65%;
   }
-  /* line 408, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 409, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .about .subhead {
     margin-right: 16%;
   }
-  /* line 411, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 412, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .about .subhead :before {
     width: 20%;
     left: 28%;
     top: 26%;
   }
-  /* line 418, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 419, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .explore .subhead {
     margin-right: 8%;
   }
-  /* line 421, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 422, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .explore .subhead :before {
     width: 20%;
     left: 32%;
   }
-  /* line 427, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 428, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .gallery .subhead {
     margin-right: 14%;
   }
-  /* line 430, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 431, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .gallery .subhead :before {
     width: 20%;
     left: 16%;
     top: 65%;
   }
-  /* line 438, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 439, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .hero .text {
     margin-top: -150%;
   }
-  /* line 446, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 447, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .gallery .likes {
     margin-top: -20%;
     margin-left: 65%;
   }
-  /* line 450, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 451, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .gallery .likes p:after {
     top: 0%;
     left: 50%;
   }
-  /* line 460, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 461, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .locations p {
     font-size: 0.8rem;
   }
 }
 
 @media all and (max-width: 768px) {
-  /* line 466, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 467, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .hero .subhead {
     margin-right: 9%;
   }
-  /* line 469, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 470, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .hero .subhead :before {
     width: 25%;
     left: 10%;
   }
-  /* line 475, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 476, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   h2 {
     font-size: 1.2rem;
   }
-  /* line 479, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 480, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   p {
     font-size: 0.8rem;
   }
-  /* line 483, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 484, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .tan .text {
     padding: 1rem;
   }
-  /* line 487, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 488, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .main .subhead {
     margin-right: 0;
   }
-  /* line 490, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 491, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .main .subhead :before {
     width: 19%;
     height: 0.4%;
     left: 8%;
     top: 25%;
   }
-  /* line 498, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 499, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .about .subhead {
     margin-right: 11%;
   }
-  /* line 501, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 502, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .about .subhead :before {
     width: 40%;
     left: 14%;
     top: 18%;
   }
-  /* line 509, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 510, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .about .subhead {
     margin-right: 11%;
   }
-  /* line 512, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 513, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .about .subhead :before {
     width: 20%;
     left: 25%;
     top: 26%;
   }
-  /* line 519, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 520, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .explore .subhead {
     margin-right: 0%;
   }
-  /* line 522, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 523, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .explore .subhead :before {
     width: 28%;
     left: 25%;
   }
-  /* line 528, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 529, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .hero .text {
     margin-top: -80%;
   }
 }
 
 @media all and (max-width: 550px) {
-  /* line 537, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 538, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   h2 {
     font-size: 1.1rem;
   }
-  /* line 542, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 543, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .main .subhead :before {
     width: 16%;
   }
-  /* line 548, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 549, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   .gallery .subhead :before {
     width: 30%;
   }
-  /* line 555, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 556, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .about .subhead :before {
     top: 25%;
     left: 28%;
   }
-  /* line 562, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 563, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .explore .subhead :before {
     width: 15%;
   }
-  /* line 568, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 569, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .gallery .subhead :before {
     width: 15%;
     top: 63%;
   }
-  /* line 574, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
+  /* line 575, ../../../Documents/coding/destination/Turner_Destination/sass/custom/_body.scss */
   #hateno .hero .text {
     margin-top: -50%;
   }
